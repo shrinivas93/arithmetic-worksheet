@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Arithmetic Worksheet</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="header" class="col-md-12">Arithmetic Worksheet</div>
+	<div id="content" class="col-md-12">
+		<div id="preferences" class="col-md-12">
+			<fieldset class="col-md-4">
+				<legend>Numbers Length</legend>
+				Number 1 : <input id="num1" type="number" min="1" max="6" value="4" /><br>
+				Number 2 : <input id="num2" type="number" min="1" max="6" value="4" />
+			</fieldset>
+			<fieldset class="col-md-4">
+				<legend>Operator</legend>
+				<input id="add" name="operator" type="radio" value="+" checked /> <label
+					for="add">Addition</label><br> <input id="sub" name="operator"
+					type="radio" value="-" /> <label for="sub">Subtraction</label><br>
+				<input id="mul" name="operator" type="radio" value="x" /> <label
+					for="mul">Multiplication</label><br> <input id="div"
+					name="operator" type="radio" value="÷" /> <label for="div">Division</label>
+			</fieldset>
+			<fieldset class="col-md-4">
+				<legend>Action</legend>
+				<input id="generate" type="button" value="Generate" /> <input
+					id="print" type="button" value="Print" /><br> <input
+					id="printOnGenerate" type="checkbox" checked /> Print on Generate
+			</fieldset>
+		</div>
+		<div id="worksheet" class="col-md-12">
+			<div id="titleWrapper" class="col-md-12">
+				<div id="date" class="col-md-3">Date : _______</div>
+				<div id="title" class="col-md-6">Addition ({4} + {4})</div>
+				<div id="score" class="col-md-3">Score : ______</div>
+			</div>
+			<div id="problems" class="col-md-12"></div>
+		</div>
+	</div>
+	<div id="problem" class="problem col-md-3">
+		<div class="problemNo col-md-1"></div>
+		<div class="actualProblem col-md-11">
+			<div class="question col-md-12">
+				<div class="operator col-md-1"></div>
+				<div class="numbers  col-md-11">
+					<div class="num1  col-md-12"></div>
+					<div class="num2  col-md-12"></div>
+				</div>
+			</div>
+			<div class="answer col-md-12"></div>
+		</div>
+	</div>
+</body>
+</html>
